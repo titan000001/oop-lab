@@ -2,8 +2,11 @@
 using namespace std;
 
 int main() {
-    int a = 10; 
-    cout << "The increment to a is " << a++ << '\n';
-    cout << "The decrement to a is " << --a ;
+    int A = 10; 
+    int incA = ++A;
+    cout << "The increment to a is " << incA  << '\n';
+    A = 10;
+    int decA = --A;
+    cout << "The decrement to a is " << decA ;
     return 0;
 }
