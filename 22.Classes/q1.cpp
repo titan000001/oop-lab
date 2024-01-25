@@ -1,39 +1,41 @@
 #include <iostream>
+using namespace std;
 
-class Circle {
-private:
-    double radius;
+class Circle
+{
+    private:
+        double radius;
+        const double PI = 3.14159;
+    
+    public:
 
-public:
-    // Constructor
-    Circle() : radius(0.0) {}
-
-    // Setter for radius
-    void setRadius(double r) {
-        radius = (r >= 0.0) ? r : 0.0;
+    double setRadius(double r){
+        if (r >= 0)
+        {
+            radius = r;
+        }
+        else
+        {
+            cout << "Radius is less than 0 , so defaulting to 0" << endl;
+            radius = 0;
+        }
+    return radius;
     }
 
-    // Getter for radius
-    double getRadius() const {
-        return radius;
+    double calculateArea(){
+        return PI * radius * radius; 
     }
-
-    // Calculate and return the area
-    double calculateArea() const {
-        return 3.14159 * radius * radius;
-    }
+    
 };
 
-int main() {
-    // Create a Circle object
+int main(){
     Circle myCircle;
+    int rad;
+    
+    cout << "Enter the radius of the circle" << endl;
+    cin >> rad;
 
-    // Set the radius
-    myCircle.setRadius(5.0);
+    myCircle.setRadius(rad);
 
-    // Get the radius and calculate the area
-    std::cout << "Radius: " << myCircle.getRadius() << std::endl;
-    std::cout << "Area: " << myCircle.calculateArea() << std::endl;
-
-    return 0;
+    cout << "The area of the circle is " << myCircle.calculateArea() << endl;
 }
