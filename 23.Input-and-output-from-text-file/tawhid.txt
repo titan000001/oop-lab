@@ -1,0 +1,4 @@
+My name is Tawhidul Islam;
+I am from Bangladesh;
+I am currently studying NUB;
+This is my first try to do file input in OOP;
