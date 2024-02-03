@@ -10,7 +10,7 @@ int max(int num1, int num2){
     {
         cout <<"Bigger number is : " << num2;
     }
-    else
+    else 
     {
         cout << "Both numbers are equal";
     }

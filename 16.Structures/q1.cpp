@@ -9,7 +9,9 @@ struct Rectangle
     
 int main(){
 
-    Rectangle square = {4.5, 4.5};
+    Rectangle square;
+    square.height = 5.5;
+    square.width = 5.5;
 
     cout << "The height of the rectangle is " << square.height << endl;
     cout << "The width of the rectangle is " << square.width << endl;

@@ -3,9 +3,9 @@
 using namespace std;
 
 int main(){
-    ofstream outputFile("squares.txt");
+    ofstream storeSquare("squares.txt");
 
-    if (!outputFile.is_open())
+    if (!storeSquare.is_open())
     {
         cout << "error opening this file for writing!" << endl;
         return 1;
@@ -14,14 +14,14 @@ int main(){
     for (int i = 0; i <= 10 ; i++)
     {
         int square = i * i;
-        outputFile << square << endl;
+        storeSquare << square << endl;
     }
 
-    outputFile.close();
+    storeSquare.close();
 
-    ifstream inputFile("squares.txt");
+    ifstream readSquare("squares.txt");
 
-    if (!inputFile.is_open())
+    if (!readSquare.is_open())
     {
         cout << "Error opening this file for reading" << endl;
         return 1;
@@ -30,11 +30,11 @@ int main(){
     cout << "Contents of the squares.txt : " << endl;
 
 int value;
-while (inputFile >> value)
+while (readSquare>> value)
 {
     cout << value << endl;
 }
 
     
-inputFile.close();    
+readSquare.close();    
 }

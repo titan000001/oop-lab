@@ -11,6 +11,5 @@ int main(){
         cout << evenNumbers[i] << " ";
     }
     
-    
     return 0;
 }

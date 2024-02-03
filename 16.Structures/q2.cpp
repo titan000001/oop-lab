@@ -8,9 +8,10 @@ void print_point(Point p) {
     std::cout << "Point: (" << p.x << ", " << p.y << ")" << std::endl;
 }
 
-// Usage
 int main() {
-    Point p = {1, 2};
+    Point p;
+    p.x = 3;
+    p.y = 4;
     print_point(p);
     return 0;
 }

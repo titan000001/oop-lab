@@ -13,7 +13,6 @@ int main(){
     int end = size -1;
 
     swap(myArr[start], myArr[end]);
-
     start++;
     end--;
 
