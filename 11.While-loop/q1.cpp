@@ -15,7 +15,7 @@ int main(){
     }
     while (number > 0)
     {
-        factorial = factorial * number;
+        factorial *= number;
         number--;
     }
     
